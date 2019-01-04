@@ -6,9 +6,9 @@ import users from "./users";
 
 export const contains = ({ name, email }, query) => {
 
-  const { first, last } = name;
+  const { first } = name;
 
-  if (first.includes(query) || last.includes(query) || email.includes(query)) {
+  if (first.includes(query) || email.includes(query)) {
 
     return true;
 
@@ -22,7 +22,7 @@ export const contains = ({ name, email }, query) => {
 
 
 
-export const getUsers = (limit = 20, query = "") => {
+export const getUsers = (limit = 5, query = "") => {
 
   return new Promise((resolve, reject) => {
 

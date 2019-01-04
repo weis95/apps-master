@@ -10,9 +10,9 @@ export default [
 
       title: "miss",
 
-      first: "Barvista",
+      first: "barvista",
 
-      last: "kavaklıoğlu"
+      last: ""
 
     },
 
@@ -28,7 +28,7 @@ export default [
 
     },
 
-    email: "afşar.kavaklıoğlu@example.com",
+    email: "open till 5:00",
 
     login: {
 
@@ -64,12 +64,6 @@ export default [
 
     picture: {
 
-      large: "https://randomuser.me/api/portraits/women/78.jpg",
-
-      medium: "https://randomuser.me/api/portraits/med/women/78.jpg",
-
-      thumbnail: "https://randomuser.me/api/portraits/thumb/women/78.jpg"
-
     },
 
     nat: "TR"
@@ -84,9 +78,9 @@ export default [
 
       title: "ms",
 
-      first: "eva",
+      first: "ambi",
 
-      last: "duncan"
+      last: ""
 
     },
 
@@ -102,7 +96,7 @@ export default [
 
     },
 
-    email: "eva.duncan@example.com",
+    email: "open til 6:00",
 
     login: {
 
@@ -138,11 +132,7 @@ export default [
 
     picture: {
 
-      large: "https://randomuser.me/api/portraits/women/12.jpg",
 
-      medium: "https://randomuser.me/api/portraits/med/women/12.jpg",
-
-      thumbnail: "https://randomuser.me/api/portraits/thumb/women/12.jpg"
 
     },
 
@@ -158,9 +148,9 @@ export default [
 
       title: "miss",
 
-      first: "jennifer",
+      first: "giraf",
 
-      last: "fowler"
+      last: ""
 
     },
 
@@ -176,7 +166,7 @@ export default [
 
     },
 
-    email: "jennifer.fowler@example.com",
+    email: "open till 03:00",
 
     login: {
 
@@ -212,11 +202,6 @@ export default [
 
     picture: {
 
-      large: "https://randomuser.me/api/portraits/women/31.jpg",
-
-      medium: "https://randomuser.me/api/portraits/med/women/31.jpg",
-
-      thumbnail: "https://randomuser.me/api/portraits/thumb/women/31.jpg"
 
     },
 
@@ -232,9 +217,9 @@ export default [
 
       title: "mr",
 
-      first: "william",
+      first: "beer capital",
 
-      last: "blanc"
+      last: ""
 
     },
 
@@ -250,7 +235,7 @@ export default [
 
     },
 
-    email: "william.blanc@example.com",
+    email: "open till 02:00",
 
     login: {
 
@@ -286,11 +271,7 @@ export default [
 
     picture: {
 
-      large: "https://randomuser.me/api/portraits/men/92.jpg",
 
-      medium: "https://randomuser.me/api/portraits/med/men/92.jpg",
-
-      thumbnail: "https://randomuser.me/api/portraits/thumb/men/92.jpg"
 
     },
 
@@ -306,9 +287,9 @@ export default [
 
       title: "ms",
 
-      first: "pinja",
+      first: "cafe belge",
 
-      last: "lampi"
+      last: ""
 
     },
 
@@ -324,7 +305,7 @@ export default [
 
     },
 
-    email: "pinja.lampi@example.com",
+    email: "closed",
 
     login: {
 
@@ -360,11 +341,6 @@ export default [
 
     picture: {
 
-      large: "https://randomuser.me/api/portraits/women/94.jpg",
-
-      medium: "https://randomuser.me/api/portraits/med/women/94.jpg",
-
-      thumbnail: "https://randomuser.me/api/portraits/thumb/women/94.jpg"
 
     },
 
