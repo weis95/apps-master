@@ -5,20 +5,19 @@ import {
   Title,
   Content,
   Button,
-  Icon,
-  Thumbnail,
-  Text,
+  Icon, 
   Body,
   Left,
-  Right,
-  View
+  Right
 } from "native-base";
 import styles from "./styles";
+import { TouchableOpacity, StyleSheet, Text, View } from 'react-native';
+import { showLocation, Popup } from 'react-native-map-link'
 
-const logo = require("../../../assets/splashscreen.png");
-const cover = require("../../../assets/web-cover1.jpg");
-
-class NHThumbnail extends Component {
+export default  class NHThumbnail extends Component {
+  state = {
+    isVisible: false
+  }
   render() {
     return (
       <Container style={styles.container}>
@@ -32,27 +31,46 @@ class NHThumbnail extends Component {
             </Button>
           </Left>
           <Body>
-            <Title>Thumbnail</Title>
+            <Title>Maps</Title>
           </Body>
           <Right />
         </Header>
 
-        <Content padder>
-          <View style={{ flex: 1, alignItems: "center" }}>
-            <Text style={styles.mb10}>Square Thumbnail</Text>
-            <Thumbnail square small source={logo} style={styles.mb10} />
-            <Thumbnail square source={logo} style={styles.mb10} />
-            <Thumbnail square large source={logo} style={styles.mb35} />
-
-            <Text style={styles.mb10}>Circular Thumbnail</Text>
-            <Thumbnail small source={cover} style={styles.mb10} />
-            <Thumbnail source={cover} style={styles.mb10} />
-            <Thumbnail large source={cover} />
-          </View>
-        </Content>
+        <View style={styles1.container}>
+        <Popup
+          isVisible={this.state.isVisible}
+          onCancelPressed={() => this.setState({ isVisible: false })}
+          onAppPressed={() => this.setState({ isVisible: false })}
+          onBackButtonPressed={() => this.setState({ isVisible: false })}
+          options={{
+            latitude: 50.87959,
+            longitude: 4.70093,
+            title: 'bars',
+            
+            cancelText: 'Cancel'
+          }}
+        />
+        <TouchableOpacity style={{padding: 20}} onPress={() => { this.setState({ isVisible: true }) }}>
+          <Text style={styles1.welcome}>
+            Show in Maps
+          </Text>
+        </TouchableOpacity>
+      </View>
       </Container>
     );
   }
 }
-
-export default NHThumbnail;
+const styles1 = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF'
+  },
+  welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    color: '#4682BC',
+    margin: 10
+  }
+});

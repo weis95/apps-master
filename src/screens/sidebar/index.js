@@ -156,7 +156,7 @@ const datas = [
     types: "3"
   },
   {
-    name: "Thumbnail",
+    name: "Maps",
     route: "NHThumbnail",
     icon: "image",
     bg: "#cc0000",
@@ -170,7 +170,7 @@ const datas = [
     types: "6"
   },
   {
-    name: "Typography",
+    name: "QRScanner",
     route: "NHTypography",
     icon: "paper",
     bg: "#48525D"
